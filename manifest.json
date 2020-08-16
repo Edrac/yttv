@@ -1,0 +1,36 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/tv*"],
+        "js": ["background.js"]
+      }
+    ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "description": "Allows https://youtube.com/tv to load YouTube™ TV App from regular browser",
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "18": "icons/18.png",
+      "19": "icons/19.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "36": "icons/36.png",
+      "38": "icons/38.png",
+      "48": "icons/48.png",
+      "512": "icons/512.png",
+      "64": "icons/64.png"
+   },
+   "manifest_version": 2,
+   "name": "YouTube™ for TV",
+   "permissions": [ "*://*.youtube.com/tv*", "webRequest", "webRequestBlocking", "storage" ],
+   "short_name": "youtube-for-tv",
+   "version": "0.0.5",
+   "browser_specific_settings": {
+      "gecko": {
+        "update_url": "https://example.com/updates.json"
+      }
+    }
+}
