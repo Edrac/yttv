@@ -27,10 +27,5 @@
    "name": "YouTube™ for TV",
    "permissions": [ "*://*.youtube.com/tv*", "webRequest", "webRequestBlocking", "storage" ],
    "short_name": "youtube-for-tv",
-   "version": "0.0.5",
-   "browser_specific_settings": {
-      "gecko": {
-        "update_url": "https://example.com/updates.json"
-      }
-    }
+   "version": "0.0.5"
 }

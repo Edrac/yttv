@@ -1,0 +1,19 @@
+{
+    "addons": {
+        "{abcd1234-1abc-1234-12ab-abcdef123456}": {
+            "updates": [
+                {
+                    "version": "0.0.4"
+                },
+                {
+                    "version": "0.0.5",
+                    "browser_specific_settings": {
+                        "gecko": {
+                            "update_url": "https://example.com/updates.json"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
